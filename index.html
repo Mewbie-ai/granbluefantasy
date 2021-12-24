@@ -26,7 +26,7 @@
     </nav>
   </header>
   <main>
-    <div class="link-tab">
+    <div class="tab">
       <div class="tab-content">
         <img class="play-now" src="linktab_playnow.png" alt="play now">
         <p>The latest version of Google Chrome is required.</p>
@@ -45,8 +45,8 @@
           <img src="to_chrome.png" alt="to chrome">
         </div>
       </div>
-      <a href="">
-        <img src="links_tab.png" alt="tab toggle">
+      <a class="tab-link">
+        <img id="tab-arrow" src="links_tab.png" onclick="this.src='links_tab_1.png'" alt="tab toggle">
       </a>
     </div>
   </main>
@@ -59,7 +59,7 @@
         <a href="" class="banner-anime">
           <img src="banner_anime_off.png" alt="granblue fantasy animation">
         </a>
-        <a href="" class="modal-link">
+        <a class="modal-link">
           <img src="to_movie.png" alt="grandblue fantasy trailer">
         </a>
       </div>
@@ -85,9 +85,8 @@
 
   <div class="modal">
     <div class="modal-content">
-      <iframe width="720" height="480"
-src="https://www.youtube.com/embed/?v=19s0G5lLc0g">
-      </iframe>
+      <span class="modal-close">&times;</span>
+      <iframe width="940" height="560" src="https://www.youtube.com/embed/19s0G5lLc0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
   <script src="script.js"></script>
